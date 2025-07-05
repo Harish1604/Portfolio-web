@@ -43,7 +43,7 @@ export default function Portfolio() {
   }, []);
 
   const glowStyle = {
-    background: `radial-gradient(1000px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 0, 200, 0.4), transparent 40%)`,
+    background: `radial-gradient(1000px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 200, 255, 0.3), transparent 40%)`,
   };
 
   return (
@@ -132,7 +132,7 @@ export default function Portfolio() {
             <div className="flex justify-center space-x-6 animate-fade-in-up animation-delay-600 mt-10">
               <Button
                 className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,0,139,0.5)] animate-pulse"
-                onClick={() => window.open("/resume (1).pdf", "_blank")}
+                onClick={() => window.open("/resume_harish.pdf", "_blank")}
               >
                 <Star className="w-5 h-5 mr-2 " />
                 Download My Resume

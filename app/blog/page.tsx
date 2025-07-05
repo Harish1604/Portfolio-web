@@ -23,10 +23,10 @@ export default function BlogPage() {
   return (
     <TransitionWrapper>
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 19, y: 0 }}
         exit={{ opacity: 0, y: -30 }}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
+        transition={{ duration: 0.1, ease: "easeInOut" }}
         className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-950 to-black text-white relative overflow-hidden"
       >
         {/* Glow effect */}

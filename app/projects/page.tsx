@@ -27,7 +27,7 @@ export default function ProjectsPage() {
   }, []);
 
   const glowStyle = {
-    background: `radial-gradient(1000px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 0, 200, 0.4), transparent 40%)`,
+    background: `radial-gradient(1000px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 200, 255, 0.3), transparent 40%)`,
   };
 
   return (
@@ -81,9 +81,8 @@ export default function ProjectsPage() {
         >
           <div className="container mx-auto">
             <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent animate-fade-in-up">
-              💡 Featured Projects
+             💡 Featured Projects
             </h2>
-
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
               {[
                 {
@@ -116,7 +115,7 @@ export default function ProjectsPage() {
                   ],
                   gradient: "from-cyan-500 to-blue-500",
                   github: "https://github.com/Harish1604/DeduVault",
-                  demo: "",
+                  demo: "https://deduvault.streamlit.app/",
                 },
                 {
                   title: "Fake News Predictor",
