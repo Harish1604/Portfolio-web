@@ -4,13 +4,12 @@ import {
   Github,
   Linkedin,
   Mail,
-  ExternalLink,
+
   Code,
-  Zap,
+
   Star,
   Globe,
-  Palette,
-  BookOpen,
+
   Award,
   GraduationCap,
   Server,
@@ -34,13 +33,14 @@ export default function Portfolio() {
   useEffect(() => {
     setIsLoaded(true);
 
-    const handleMouseMove = (e:any) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
+  
 
   const glowStyle = {
     background: `radial-gradient(1000px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 200, 255, 0.3), transparent 40%)`,
