@@ -1,30 +1,23 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { useState, useEffect } from "react";
 import {
   Github,
   Linkedin,
   Mail,
-
   Code,
-
   Star,
   Globe,
-
   Award,
   GraduationCap,
   Server,
   Trophy,
-} from "lucide-react";  
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-
-  CardContent,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Portfolio() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -40,7 +33,6 @@ export default function Portfolio() {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
-  
 
   const glowStyle = {
     background: `radial-gradient(1000px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 200, 255, 0.3), transparent 40%)`,
@@ -101,23 +93,22 @@ export default function Portfolio() {
           >
             <div className="relative mb-8">
               <div className="w-40 h-40 mx-auto mb-8 animate-bounce rounded-full overflow-hidden border-4 border-cyan-500 shadow-lg">
-                <img
+                <Image
                   src="/1.jpg" // <-- replace with your image path
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
-
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
-              Hi, I'm{" "}
+              Hi, {"I'm "}
               <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-500 bg-clip-text text-transparent ">
                 Harish J
               </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 mt-4 text-center max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300">
-              ⚡ Full-Stack Developer & ML Trainee |{" "}
+              ⚡ Full-Stack Developer & ML Trainee {"| "}
               <span className="text-blue-400 font-semibold">budding</span>{" "}
               Software Engineer <br />
               ☁️ Passionate about{" "}
