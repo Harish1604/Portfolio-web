@@ -65,7 +65,7 @@ export default function BlogPage() {
         </nav>
 
         {/* Blog Section */}
-        <section className="pt-32 px-6 pb-20 relative z-20 font-[Poppins]">
+        <section className="pt-32 px-6 pb-20 relative z-20 font-sans">
           <div className="container mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent mb-10 animate-fade-in-up">
               ✍️ Tech Blog

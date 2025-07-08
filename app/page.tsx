@@ -94,8 +94,10 @@ export default function Portfolio() {
             <div className="relative mb-8">
               <div className="w-40 h-40 mx-auto mb-8 animate-bounce rounded-full overflow-hidden border-4 border-cyan-500 shadow-lg">
                 <Image
-                  src="/1.jpg" // <-- replace with your image path
+                  src="/3.jpg" // ✅ This should be inside your public folder
                   alt="Profile"
+                  width={192} // Tailwind 48 = 192px
+                  height={192}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -133,7 +135,7 @@ export default function Portfolio() {
         </div>
       </section>
       {/* 🚀 About and 🎓 Qualifications Section */}
-      <section className="py-20 px-4 relative z-20 font-[Poppins] scroll-mt-32">
+      <section className="py-20 px-4 relative z-20 font-sans scroll-mt-32 ">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row gap-8">
             {/* 🔍 About Section */}
@@ -176,7 +178,7 @@ export default function Portfolio() {
             </div>
 
             {/* 📚 Qualifications Section */}
-            <div id="qualifications" className="flex-1">
+            <div id="qualifications" className="flex-1 font-sans">
               <h2 className="text-4xl font-bold text-center mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-fade-in-up">
                 🎓 Qualifications
               </h2>
@@ -209,7 +211,7 @@ export default function Portfolio() {
       {/* 🛠️ Skills Section */}
       <section
         id="skills"
-        className="py-20 px-4 relative z-20 font-[Poppins] scroll-mt-32"
+        className="py-20 px-4 relative z-20 font-sans scroll-mt-32"
       >
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-fade-in-up">
@@ -220,7 +222,7 @@ export default function Portfolio() {
             {[
               {
                 icon: Code,
-                title: "Frontend 💻",
+                title: "Frontend",
                 skills: [
                   "React",
                   "Next.js",
@@ -231,7 +233,7 @@ export default function Portfolio() {
               },
               {
                 icon: Globe,
-                title: "Backend 🧠",
+                title: "Backend",
                 skills: [
                   "Node.js",
                   "Python",
@@ -242,7 +244,7 @@ export default function Portfolio() {
               },
               {
                 icon: Code,
-                title: "Programming 🧩",
+                title: "Programming",
                 skills: [
                   "Python",
                   "Java",
@@ -255,7 +257,7 @@ export default function Portfolio() {
               },
               {
                 icon: Server,
-                title: "Cloud & Blockchain ☁️🔗",
+                title: "Cloud & Blockchain",
                 skills: [
                   "AWS",
                   "IPFS",
@@ -300,7 +302,7 @@ export default function Portfolio() {
       {/* 🏅 Certifications & Achievements */}
       <section
         id="certifications"
-        className="py-20 px-4 relative z-20 font-[Poppins] scroll-mt-32"
+        className="py-20 px-4 relative z-20 font-sans scroll-mt-32"
       >
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-fade-in-up">
@@ -352,7 +354,7 @@ export default function Portfolio() {
       {/* 📬 Contact Section */}
       <section
         id="contact"
-        className="py-20 px-4 relative z-20 font-[Poppins] scroll-mt-32"
+        className="py-20 px-4 relative z-20 font-sans scroll-mt-32"
       >
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent animate-fade-in-up">
@@ -370,7 +372,10 @@ export default function Portfolio() {
                 <Button
                   className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white px-8 py-3 rounded-full text-lg font-semibold hover:scale-105 hover:shadow-[0_0_20px_rgba(0,139,139,0.5)] transition-all duration-300"
                   onClick={() =>
-                    (window.location.href = "mailto:harish16042005@gmail.com")
+                    window.open(
+                      "https://mail.google.com/mail/?view=cm&fs=1&to=harish16042005@gmail.com",
+                      "_blank"
+                    )
                   }
                 >
                   <Mail className="w-5 h-5 mr-2" />

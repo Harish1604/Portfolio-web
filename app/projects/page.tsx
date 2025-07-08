@@ -77,7 +77,7 @@ export default function ProjectsPage() {
         {/* 💡 Featured Projects Section */}
         <section
           id="projects"
-          className="pt-32 pb-20 px-4 relative z-20 font-[Poppins]"
+          className="pt-32 pb-20 px-4 relative z-20 font-poppins"
         >
           <div className="container mx-auto">
             <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent animate-fade-in-up">
